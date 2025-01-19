@@ -14,10 +14,10 @@ btn.addEventListener("click", function() {
 });
 
 function getRandomColor() {
-    let red = Math.floor(Math.random() * 256);  // 0 to 255
+    let red = Math.floor(Math.random() * 256);  
     let green = Math.floor(Math.random() * 256); 
     let blue = Math.floor(Math.random() * 256);
 
-    let color = `rgb(${red}, ${green}, ${blue})`;  // Correct format for CSS
+    let color = `rgb(${red}, ${green}, ${blue})`;  
     return color;
 }
