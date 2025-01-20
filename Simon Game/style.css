@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    height: 200px;
+    width: 200px;
+    border-radius:20px;
+    
+}
