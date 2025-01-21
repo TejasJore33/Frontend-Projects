@@ -12,15 +12,14 @@ document.addEventListener("keypress",function(){
     if(started == false){
         console.log("Game is started");
         started = true;
-
         levelUp();
     }
 });
 
-function btnFash(btn){
-    btn.classlist.add("flash");
+function btnFlash(btn){
+    btn.classList.add("flash");
     setTimeout(function() {
-        btn.classlist.remove("flash");
+        btn.classList.remove("flash");
     }, 1000);
 }
 
@@ -28,6 +27,7 @@ function btnFash(btn){
 function levelUp() {
     level++;
     h2.innerText = `Level ${level}`;
+    
     let randIdx = Math.floor(Math.random()*3);
     let randoColor = btns[randIdx];
     let randbtn = document.querySelector(`.${randoColor}`);
